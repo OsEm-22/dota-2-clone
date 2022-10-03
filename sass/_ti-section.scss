@@ -1,0 +1,381 @@
+.ti {
+  position: relative;
+  top: -8rem;
+  background-color: black;
+  box-shadow: rgb(0, 0, 0) 20px 20px 30px 50px;
+  z-index: 10;
+}
+
+.ti-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ti-container {
+  .ti-heading {
+    margin-bottom: 1rem;
+    span {
+      text-transform: uppercase;
+      margin-right: 1.5rem;
+      letter-spacing: 3px;
+    }
+    a {
+      color: #ffffff90;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 3px;
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+
+.ti-container {
+  .ti-album {
+    display: flex;
+    gap: 1rem;
+  }
+  .ti-img {
+    width: 100%;
+    border-bottom: 2px solid #555;
+    overflow: hidden;
+  }
+  .ti-img:hover {
+    border-bottom: 2px solid #ff6046;
+  }
+}
+
+.ti-img {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .popup-texts {
+    position: absolute;
+    padding: 1.5rem 0.5rem;
+    bottom: 0;
+    transform: translateY(6rem);
+    transition: 0.5s;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 0.95rem;
+    }
+    span {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hover-texts {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.ti-img {
+  .popup-texts:hover {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+.popup1,
+.popup3 {
+  height: 100%;
+}
+
+// -----------------------TI SECTION RESPONSIVE---------------------- //
+@media (max-width: 1050px) {
+  .ti-img {
+    .popup-texts {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .ti-img {
+    .popup-texts {
+      h1 {
+        font-size: 1.3rem;
+      }
+      span,
+      .hover-texts {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .ti-img {
+    .popup-texts {
+      h1 {
+        font-size: 1rem;
+        margin-bottom: 1.7rem;
+      }
+      span,
+      .hover-texts {
+        font-size: 0.8rem;
+      }
+    }
+    .popup1 {
+      transform: translateY(7rem);
+    }
+    .popup2 {
+      height: 100%;
+    }
+    .popup1,
+    .popup3 {
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 938px) {
+  .ti-img {
+    .popup1 {
+      transform: translateY(6rem);
+      height: 100%;
+    }
+    .popup2,
+    .popup3 {
+      transform: translateY(5rem);
+    }
+    .popup-texts {
+      h1 {
+        font-size: 0.9rem;
+      }
+      span,
+      .hover-texts {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .ti-container {
+    .ti-heading {
+      margin-left: 5%;
+      span,
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .ti-img {
+    .popup-texts {
+      transform: translateY(4.3rem);
+      span {
+        font-size: 0.6rem;
+      }
+    }
+    .popup1 {
+      transform: translateY(5.3rem);
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .ti-container {
+    .ti-album {
+      gap: 0.5rem;
+    }
+  }
+  .ti-img {
+    .popup-texts {
+      transform: translateY(3.6rem);
+      span {
+        font-size: 0.5rem;
+      }
+      .hover-texts {
+        font-size: 0.7rem;
+      }
+    }
+    .popup1 {
+      transform: translateY(4.7rem);
+      h1 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .ti-img {
+    .popup-texts {
+      width: 100%;
+    }
+    .popup1 {
+      transform: translateY(4.4rem);
+    }
+    .popup2,
+    .popup3 {
+      transform: translateY(3.5rem);
+      h1 {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+      .hover-texts {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  .ti-img {
+    .popup1 {
+      transform: translateY(4.3rem);
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+    .popup2,
+    .popup3 {
+      transform: translateY(3.3rem);
+    }
+    .popup3 {
+      h1 {
+        font-size: 0.7rem;
+      }
+      span,
+      .hover-texts {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .ti-img {
+    .popup-texts {
+      h1 {
+        font-size: 0.7rem;
+      }
+    }
+    .popup1 {
+      transform: translateY(3.5rem);
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .popup2 {
+      transform: translateY(2.5rem);
+    }
+    .popup3 {
+      transform: translateY(2.75rem);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ti-img {
+    .popup-texts {
+      h1 {
+        font-size: 0.6rem;
+      }
+    }
+    .popup1 {
+      transform: translateY(3.5rem);
+      h1 {
+        margin-bottom: 0.7rem;
+      }
+      .hover-texts {
+        font-size: 0.5rem;
+      }
+    }
+    .popup2 {
+      transform: translateY(2.55rem);
+      .hover-texts {
+        font-size: 0.5rem;
+      }
+    }
+    .popup3 {
+      transform: translateY(2.75rem);
+    }
+    .hover-texts {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .ti-container {
+    .ti-heading {
+      span,
+      a {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .ti-img {
+    .popup-texts {
+      transform: translateY(0.5rem);
+    }
+    .hover-texts {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .ti-container {
+    .ti-heading {
+      span,
+      a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .ti-img {
+    .popup-texts {
+      transform: translateY(0);
+      padding: 0;
+      h1 {
+        font-size: 0.6rem;
+      }
+      span {
+        font-size: 0.3rem;
+      }
+    }
+
+    .hover-texts {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .ti-container {
+    .ti-heading {
+      span,
+      a {
+        font-size: 0.3rem;
+      }
+    }
+  }
+  .ti-img {
+    .popup-texts {
+      transform: translateY(0);
+      padding: 0;
+      h1 {
+        font-size: 0.4rem;
+      }
+      span {
+        font-size: 0.3rem;
+      }
+    }
+  }
+}
+// ---------------------TI SECTION RESPONSIVE END-------------------- //
